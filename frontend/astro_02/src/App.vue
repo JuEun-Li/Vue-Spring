@@ -1,23 +1,26 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/> 
+    <tool-bar></tool-bar>
+    <back-ground></back-ground>
+    <router-view></router-view>
+    <astro-footer></astro-footer>   
   </div>
 </template>
 
 <script>
+import BackGround from './components/BackGround.vue';
+import ToolBar from './components/ToolBar.vue';
+import AstroFooter from './components/AstroFooter.vue';
+
 export default {
-  name: 'App' 
+  components: {
+    AstroFooter,
+    ToolBar,
+    BackGround,
+  }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style type="text/css">
+  
 </style>
