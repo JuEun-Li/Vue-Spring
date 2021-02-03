@@ -1,6 +1,6 @@
 <template>
   <div>
-      findview
+      list
   </div>
 </template>
 

@@ -16,7 +16,7 @@ export default {
   components: {
     AstroFooter,
     ToolBar,
-    BackGround,
+    BackGround
   }
 }
 </script>

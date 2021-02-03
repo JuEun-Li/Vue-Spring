@@ -1,15 +1,42 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
 
-Vue.use(Router)
+import AstroHome from '../views/AstroHome.vue';
+import AstroPlanet from '../views/AstroPlanet.vue';
+import AstroSatellite from '../views/AstroSatellite.vue';
+import AstroQuiz from '../views/AstroQuiz.vue';
 
-export default new Router({
-  routes: [
+import AstroList from '../views/AstroList.vue';
+
+Vue.use(VueRouter);
+
+export default new VueRouter({
+    mode: 'history',
+    routes: [
+        {   
+            path:'/',
+            redirect: '/home'
+        },
+        {
+        path:'/home',
+        component: AstroHome,
+    },
     {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+        path:'/planet',
+        component: AstroPlanet,
+    },
+    {
+        path:'/satellite',
+        component: AstroSatellite,
+    },
+    {
+        path:'/quiz',
+        component: AstroQuiz,
+    },
+    {
+        path:'/list',
+        component: AstroList
     }
-  ]
-})
+
+    ]
+});
