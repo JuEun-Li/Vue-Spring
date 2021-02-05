@@ -17,9 +17,8 @@
           <div class="dropdown">
           <li class="dropdown-button2"><router-link to="/satellite">위성 이야기</router-link></li>
             <div class="dropdown-content">
-              <a href="#">달</a>
-              <a href="#">타이탄</a>
-              <a href="#">유로파</a>
+              <router-link to="/satellite">달</router-link>
+              <router-link to="/satellite2">목성의 위성</router-link>
             </div>
           </div>
 
@@ -37,17 +36,14 @@
             </div>
           </div>
 
-           <!-- <form name= "fo" method="get">
-					<input type="text" size="20" value="" id = "name">
-          <input type="submit" value=""><i class="search fas fa-search"></i> </form> -->
-					
-          <form class='search'>
+    
+          <!-- <form class='search'>
              <input class = "keyword" type = 'text' name = 'search' maxlength= 200 value="" autocomplete="off">
 
             <button class = "img-button" type = "submit" name = "click" value = "">
               <i class="fas fa-search"></i>
             </button>
-          </form>
+          </form> -->
         </ul>
       </nav>
   </div>
