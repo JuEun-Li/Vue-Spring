@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
+    "firebase": "^8.2.6",
     "vue": "^2.6.12",
     "vue-router": "^3.0.1"
   },
@@ -66,7 +67,6 @@
     "node": ">= 6.0.0",
     "npm": ">= 3.0.0"
   },
-  
   "browserslist": [
     "> 1%",
     "last 2 versions",
