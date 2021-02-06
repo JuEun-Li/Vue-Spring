@@ -16,32 +16,32 @@
         <p class="pic_1">
         <a href="https://terms.naver.com/entry.nhn?docId=3567177&cid=58945&categoryId=58974">
         <img src="https://ncc-phinf.pstatic.net/webtop01/2009/4/22/226/3.jpg?type=w323" alt="사진 없음"></a></p>
-        <h3>이오</h3><br>
-        <button type="button" @click="showDialog1 = true">상세 정보</button>
+        <h3 style="color: black">이오</h3><br>
+        <button type="button" @click="showDialog1 = true" class="btn_shape">상세 정보</button>
     </span>
 
     <span class="round_table">
         <p class="pic_1">
         <a href="https://esahubble.org/images/opo1633a/">
         <img src="https://cdn.spacetelescope.org/archives/images/thumb700x/opo1633a.jpg" alt="사진 없음"></a></p>
-        <h3>유로파</h3><br>
-        <button type="button" @click="showDialog2 = true">상세 정보</button>
+        <h3 style="color: black">유로파</h3><br>
+        <button type="button" @click="showDialog2 = true" class="btn_shape">상세 정보</button>
     </span>
 
     <span class="round_table">
         <p class="pic_1">
         <a href="https://terms.naver.com/entry.nhn?docId=3567177&cid=58945&categoryId=58974">
         <img src="https://ncc-phinf.pstatic.net/webtop01/2009/4/22/51/2.jpg?type=w323" alt="사진 없음"></a></p>
-        <h3>가니메데</h3><br>
-        <button type="button" @click="showDialog3 = true">상세 정보</button>
+        <h3 style="color: black">가니메데</h3><br>
+        <button type="button" @click="showDialog3 = true" class="btn_shape">상세 정보</button>
     </span>
 
     <span class="round_table">
         <p class="pic_1">
         <a href="https://nssdc.gsfc.nasa.gov/image/planetary/jupiter/callisto.jpg">
         <img src="https://nssdc.gsfc.nasa.gov/image/planetary/jupiter/callisto.jpg" alt="사진 없음"></a></p>
-        <h3>칼리스토</h3><br>
-        <button type="button" @click="showDialog4 = true">상세 정보</button>
+        <h3 style="color: black">칼리스토</h3><br>
+        <button type="button" @click="showDialog4 = true" class="btn_shape">상세 정보</button>
     </span></div>
     <br><br><br><br>
 
@@ -112,6 +112,7 @@ div {
     color: black;
     font-size: 15px;
     box-shadow: 3px 3px 3px lightgray;
+    /* background-color: aliceblue; */
     padding: 1%;
     margin-top: 3%;
 }
@@ -128,6 +129,22 @@ img, .pic_1 {
   /*가로세로 비율을 유지한 채로 사이즈가 조절*/
 }
 
+/*------------------------------- button 서식 */
+.btn_shape {
+  border: 1.5px solid lightblue;
+  box-shadow: 2px 2px 2px lightgray;
+  color:white;
+  background-color: lightblue;
+  padding: 7px;
+  margin-top: 10%;
+  border-radius: 8px;
+  outline: 0; /* 클릭시 테두리 삭제 */
+}
+.btn_shape:hover {
+  background-color: rgba(0,0,0,0);
+  color: skyblue;
+  cursor: pointer;
+}
 .top {
   width: 4.5%;
   height: 6.5%;

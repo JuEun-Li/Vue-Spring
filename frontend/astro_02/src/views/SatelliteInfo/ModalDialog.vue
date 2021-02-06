@@ -27,9 +27,12 @@ export default {
     left: 0; top: 0; width: 100%; height: 100%;
     background-color: #aaa; opacity: 0.5; margin-top: 40%;
   }
-  div#dialog { position: absolute; top: 100px; left: 50%;
+  div#dialog { position: absolute; 
+    top: 100px; 
+    left: 50%;
     padding: 30px; background-color: white;
     border: 1px solid #ccc; box-shadow: 4px 4px 4px #666; margin-top: 40%;
+      max-width: 500px;
   }
 </style>
 
