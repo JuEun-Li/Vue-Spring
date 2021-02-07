@@ -280,6 +280,7 @@ export default {
    .blue {
        /* background-color: rgb(118, 188, 250); */
         background-color: lightblue;
+        color: white;
    }
   div {
     vertical-align: middle;

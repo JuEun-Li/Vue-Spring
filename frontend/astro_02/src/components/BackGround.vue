@@ -32,10 +32,11 @@ export default {
    margin-top: 198px;
   vertical-align: bottom;
   width: 100%;
-  /* background: rgb(194, 161, 224); */
-   background:rgb(208, 228, 228);
+  /* background: lightgray; */
+   /* background:rgb(195, 214, 214); */
+   background: linear-gradient( to bottom, rgb(195, 214, 214), aliceblue);
   height: 52px;
   display: inline-block;
-  opacity: 0.7; /*흐리게 조절*/
+  opacity: 0.6; /*흐리게 조절*/
  }
 </style>

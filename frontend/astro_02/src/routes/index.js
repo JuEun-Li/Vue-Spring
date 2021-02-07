@@ -5,7 +5,6 @@ import AstroHome from '../views/AstroHome.vue';
 import AstroPlanet from '../views/AstroPlanet.vue';
 import AstroSatellite from '../views/AstroSatellite.vue';
 import Satellite2 from '../views/Satellite2.vue';
-import AstroQuiz from '../views/AstroQuiz.vue';
 
 import AstroList from '../views/AstroList.vue';
 
@@ -33,10 +32,6 @@ export default new VueRouter({
     {
         path:'/satellite2',
         component: Satellite2,
-    },
-    {
-        path:'/quiz',
-        component: AstroQuiz,
     },
     {
         path:'/list',
