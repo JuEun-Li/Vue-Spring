@@ -12,7 +12,7 @@ export default {
 
 <style scoped>
     div {
-        background-color: skyblue;
+        background-color: rgb(209, 250, 250);
         margin-top: 7%;
         margin-bottom: 0;
         width: 100%;

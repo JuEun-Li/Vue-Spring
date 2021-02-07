@@ -57,14 +57,13 @@ export default {
 <style scoped>
 .mainbar{
   /* background: rgb(151, 97, 151); */
-  background: black;
+  /* background: rgb(161, 199, 212); */
+  background: rgb(125, 157, 168);
   display: flex;
   flex-direction: row;
   margin: 0;
   list-style-type: none;
-  /* position: fixed; */
   position: relative;
-  /* width: 100%; */
 }
 a {
   padding-right: 80px;
@@ -93,18 +92,21 @@ a {
   text-decoration: none;
   display: block;
 }
+/* 세부 컨텐츠 마우스 올렸을 때 색깔*/
 .dropdown-content a:hover {
   /* background-color: blueviolet; */
-  background-color: darkgray;
+  background-color: lightblue;
+  /* background-color: rgb(150, 203, 221); */
   /* background-color: #f1f1f1; */
 }
 .dropdown:hover .dropdown-content {
   display: block;
 }
+/*세부 내용 배경*/
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: black;
+  background-color: rgb(125, 157, 168);
   min-width: 120px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;

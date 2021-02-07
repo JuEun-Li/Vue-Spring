@@ -278,7 +278,8 @@ export default {
        background-color: white;
    }
    .blue {
-       background-color: rgb(118, 188, 250);
+       /* background-color: rgb(118, 188, 250); */
+        background-color: lightblue;
    }
   div {
     vertical-align: middle;
@@ -352,6 +353,7 @@ export default {
   width: 200px;
   object-fit: contain; /*가로세로 비율을 유지한 채로 사이즈가 조절*/
 }
+
 /* -----------------------------------table 서식 */
 #planet_table {
   width: 35%;

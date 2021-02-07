@@ -17,20 +17,25 @@ export default {
     margin: 0;
     width: 100%;
     height: 250px;
-   background-color: aliceblue;
-   background-image:url('https://cdn.spacetelescope.org/archives/images/thumb700x/heic0709b.jpg');
+    background-size: cover;
+   /* background-image:url('https://cdn.spacetelescope.org/archives/images/thumb700x/heic0709b.jpg'); */
    /*Credit: NASA, ESA, Marc Postman (STScI), and the CLASH team. */
+
+    background-image:url('https://cdn.spacetelescope.org/archives/images/thumb700x/heic1509e.jpg');
+    /* Credit: NASA, ESA, the Hubble Heritage Team (STScI/AURA), A. Nota (ESA/STScI), and the Westerlund 2 Science Team */
+
+     /* background-image:url('https://cdn.spacetelescope.org/archives/images/thumb700x/heic1301a.jpg'); */
+   
  }
  .one {
    position: absolute;
    margin-top: 198px;
   vertical-align: bottom;
   width: 100%;
-  background: black;
+  /* background: rgb(194, 161, 224); */
+   background:rgb(208, 228, 228);
   height: 52px;
   display: inline-block;
-  /* flex-direction: row; */
-  /* list-style-type: none; */
-  opacity: 0.8; /*흐리게 조절*/
+  opacity: 0.7; /*흐리게 조절*/
  }
 </style>
