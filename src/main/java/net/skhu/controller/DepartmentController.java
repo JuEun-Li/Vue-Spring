@@ -3,58 +3,55 @@ package net.skhu.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 
-import net.skhu.dto.Department;
-import net.skhu.mapper.DepartmentMapper;
+import net.skhu.entity.Department;
+import net.skhu.repository.DepartmentRepository;
 
-@Controller
-@RequestMapping("/department")
+@RestController
 public class DepartmentController {
 
-    @Autowired DepartmentMapper departmentMapper;
+    @Autowired DepartmentRepository departmentRepository;
 
-    @RequestMapping("list")
-    public String list(Model model) {
-        List<Department> departments = departmentMapper.findAll();
-        model.addAttribute("departments", departments);
-        return "department/list";
+    @GetMapping("departments")
+    public List<Department> departments() {
+        return departmentRepository.findAll();
     }
 
-    @GetMapping("create")
-    public String create(Model model) {
-        model.addAttribute("department", new Department());
-        return "department/edit";
+    @GetMapping("department/{id}")
+    public Department department(@PathVariable("id") int id) {
+        return departmentRepository.findById(id).get();
     }
 
-    @PostMapping("create")
-    public String create(Model model, Department department) {
-        departmentMapper.insert(department);
-        return "redirect:list";
+    @PostMapping("department")
+    public boolean insert(@RequestBody Department department) {
+        departmentRepository.save(department);
+        return true;
+    }
+    	// get과 post는 id값 대신 @RequestBody로 데이터
+    @PutMapping("department")
+    public boolean update(@RequestBody Department department) {
+        departmentRepository.save(department);
+        return true;
     }
 
-    @GetMapping("edit")
-    public String edit(Model model, @RequestParam("id") int id) {
-        Department department = departmentMapper.findOne(id);
-        model.addAttribute("department", department);
-        return "department/edit";
+    @DeleteMapping("department/{id}")
+    public boolean delete(@PathVariable("id") int id) {
+        departmentRepository.deleteById(id);
+        return true;
+    }
+    
+    @GetMapping("departments")
+    public List<Department> departments() {
+        return departmentRepository.findAll();
     }
 
-    @PostMapping("edit")
-    public String edit(Model model, Department department) {
-        departmentMapper.update(department);
-        return "redirect:list";
-    }
 
-    @RequestMapping("delete")
-    public String delete(Model model, @RequestParam("id") int id) {
-        departmentMapper.delete(id);
-        return "redirect:list";
-    }
 }
 

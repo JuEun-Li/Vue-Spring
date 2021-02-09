@@ -36,6 +36,7 @@
           <div class="dropdown">
           <li class="dropdown-button4"><router-link to="/list">게시판</router-link></li>
           <div class="dropdown-content">
+            <a href="http://localhost:8089/departments.html">2</a>
             </div>
           </div>
 

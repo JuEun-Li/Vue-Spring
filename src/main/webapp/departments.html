@@ -1,5 +1,12 @@
-<template>
- <div id="app">
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="departments.css">
+</head>
+<body>
+  <div id="app">
     <div id="main">
       <h1> 학과목록</h1>
       <button type="button" v-on:click="create"> 추가</button>
@@ -37,15 +44,10 @@
     </div>    
 
   </div>
- 
-</template>
 
-<script>
-import axios from 'axios';
-
-
-export default {
-   el: '#app',
+  <script type="text/javascript">
+    var app = new Vue({
+      el: '#app',
       data: {
         departments: [],
         department: {},
@@ -80,32 +82,12 @@ export default {
           this.showDialog = false;
         }
       }
-}
+    })
+
     window.onload = function() {
       app.reload();
     }
-</script>
+   </script>
+</body>
+</html>
 
-<style scoped>
-button { padding: 0.4em 1.5em; }
-table { border-collapse: collapse; margin-bottom: 20px; width: 100%; }
-tr:nth-child(1) { background-color: #ddd; }
-tr.clickable:hover { background-color: #ffb; cursor: pointer; }
-td { padding: 8px;  border: 1px solid #aaa; }
-
-/* main */
-div#main { padding: 30px; margin: 30px auto; max-width: 800px;
-  border: 1px solid #ccc; box-shadow: 3px 3px 3px #aaa; }
-div#main h1 { border-bottom: 1px solid gray; }
-div#main button { float: right; margin-bottom: 5px; }
-
-/* dialog */
-div#backdrop { position: absolute; left: 0; top: 0; width: 100%; height: 100%;
-  background-color: #aaa; opacity: 0.5; }
-div#dialog { position: absolute; top: 50px; left: 50%;
-  padding: 30px; margin-left: -250px; max-width: 500px;
-  background-color: white;
-  border: 1px solid #ccc; box-shadow: 4px 4px 4px #666; }
-div#dialog h1 { border-bottom: 1px solid gray; }
-div#dialog input { padding: 5px; width: 100%; margin-bottom: 20px; font-size: 10pt; }
-</style>
