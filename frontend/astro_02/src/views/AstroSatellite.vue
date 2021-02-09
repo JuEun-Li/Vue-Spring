@@ -47,7 +47,7 @@ export default {
                 "blue",
                 "orange",
             ],
-            
+
             // 타이머
             timer : null,
             // 현재 활성화된 인덱스

@@ -2,7 +2,10 @@
   <div>
       <nav>
         <ul class="mainbar">
-         <li class="list-home"><router-link to="/home"><i class="fas fa-home fa-lg"></i></router-link></li>
+         <li class="list-home">
+           <router-link to="/home">
+          <i class="fas fa-home fa-lg"></i>
+          </router-link></li>
 
           <li class="dropdown"><router-link to="/home">개요</router-link></li>
 
@@ -15,10 +18,10 @@
           </div>
 
           <div class="dropdown">
-          <li class="dropdown-button2"><router-link to="/satellite">위성 이야기</router-link></li>
+          <li class="dropdown-button2"><router-link to="/satellite2">위성 이야기</router-link></li>
             <div class="dropdown-content">
-              <router-link to="/satellite">달</router-link>
               <router-link to="/satellite2">목성의 위성</router-link>
+              <router-link to="/satellite">달</router-link>
             </div>
           </div>
 
@@ -31,7 +34,7 @@
           </div> -->
 
           <div class="dropdown">
-          <li class="dropdown-button4"><router-link to="/board/list">게시판</router-link></li>
+          <li class="dropdown-button4"><router-link to="/list">게시판</router-link></li>
           <div class="dropdown-content">
             </div>
           </div>
@@ -66,8 +69,9 @@ export default {
   position: relative;
 }
 a {
-  padding-left: 40px;
-  padding-right: 40px;
+  width: 90px;
+  padding-left: 30px;
+  padding-right: 30px;
   cursor: pointer;
   color: white;
   text-decoration: none; 
