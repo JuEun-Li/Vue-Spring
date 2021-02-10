@@ -36,7 +36,8 @@ export default {
     .box {
         display: inline-block;
         font-size: 15px;
-        margin-left: 20%;
+        margin-right: 20%;
+        float: right;
         margin-top: 5%;
         vertical-align: top;
     }
