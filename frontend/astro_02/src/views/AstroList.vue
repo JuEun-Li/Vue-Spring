@@ -1,3 +1,5 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <template>
  <div id="app">
     <div id="main">
@@ -41,8 +43,8 @@
 </template>
 
 <script>
-import axios from 'axios';
 
+  
 
 export default {
    el: '#app',
@@ -52,7 +54,7 @@ export default {
         showDialog: false
       },
       methods: {
-        create: function() {
+        created: function() {
           this.showDialog = "등록";          ;
           this.department = {};
         },

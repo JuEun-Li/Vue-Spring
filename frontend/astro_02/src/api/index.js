@@ -1,5 +1,5 @@
 import axios from 'axios';
 
-function fetchList() {
-    axios.get('url')
-}
+// function fetchList() {
+//     return axios.get('departments');
+// }
