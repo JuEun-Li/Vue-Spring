@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 
 import AstroHome from '../views/AstroHome.vue';
 import AstroPlanet from '../views/AstroPlanet.vue';
+import Planet2 from '../views/Planet2.vue';
 import AstroSatellite from '../views/AstroSatellite.vue';
 import Satellite2 from '../views/Satellite2.vue';
 import AstroList from '../views/AstroList.vue';
@@ -23,6 +24,10 @@ export default new VueRouter({
     {
         path:'/planet',
         component: AstroPlanet,
+    },
+    {
+        path:'/planet2',
+        component: Planet2,
     },
     {
         path:'/satellite',

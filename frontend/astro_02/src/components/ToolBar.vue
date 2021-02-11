@@ -13,7 +13,7 @@
           <li class="dropdown-button1"><router-link to="/planet">행성 이야기</router-link></li>
             <div class="dropdown-content">
               <router-link to="/planet">지구형 행성</router-link>
-              <router-link to="/planet">가스형 행성</router-link>
+              <router-link to="/planet2">목성형 행성</router-link>
             </div>
           </div>
 

@@ -42,7 +42,9 @@
         <img src="https://nssdc.gsfc.nasa.gov/image/planetary/jupiter/callisto.jpg" alt="사진 없음"></a></p>
         <h3 style="color: black">칼리스토</h3><br>
         <button type="button" @click="showDialog4 = true" class="btn_shape">상세 정보</button>
-    </span></div>
+    </span><br><br>
+    <div class="last_box"></div>
+    </div>
     <br><br><br><br>
 
     <UploadDialog1 v-if="showDialog1" @cancel="showDialog1=false" />
@@ -144,6 +146,14 @@ img, .pic_1 {
   background-color: rgba(0,0,0,0);
   color: skyblue;
   cursor: pointer;
+}
+.last_box {
+  display: inline-block;
+  width: 30%;
+  height: 5px;
+  background: lightblue;
+  margin-left: 30%;
+  margin-top: 7%;
 }
 .top {
   width: 4.5%;
