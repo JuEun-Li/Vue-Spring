@@ -267,7 +267,7 @@ export default {
    text-align: center;
  }
  .star {
-   color: aqua;
+   color: skyblue;
    padding-right: 15px;
  }
  .first {
@@ -295,7 +295,7 @@ export default {
    vertical-align: middle;
    padding-right: 10%;
    /* color: darkorchid; */
-   color: rgb(233, 173, 233);
+   color: lightblue;
  }/* icon 스타일 2 */
  .answer-box {
    display: inline-block;

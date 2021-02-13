@@ -90,7 +90,7 @@ div {
     display: inline-block;
 }
  .star {
-   color: aqua;
+   color: skyblue;
    padding-right: 15px;
  }
  .first {

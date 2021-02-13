@@ -186,7 +186,7 @@ export default {
    text-align: center;
  }
  .star {
-   color: aqua;
+   color: blueviolet;
    padding-right: 15px;
  }
  .first {

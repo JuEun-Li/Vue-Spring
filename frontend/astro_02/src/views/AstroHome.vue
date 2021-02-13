@@ -80,7 +80,7 @@ div {
    text-align: center;
  }
  .star {
-   color: aqua;
+   color: skyblue;
    padding-right: 15px;
  }
  .first {
