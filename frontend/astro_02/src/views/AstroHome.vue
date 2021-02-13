@@ -123,22 +123,22 @@ img {
 /* 따옴표 아이콘 시작 */
 .icon_left1 {
   float: left;
-  color: rgb(202, 230, 148);
+  color: lightblue;;
   margin-right: 5%;
 }
 .icon_right1 {
   float: right;
-  color: rgb(202, 230, 148);
+  color: lightblue;;
   margin-right: 5%;
 }
 .icon_left2 {
   float: left;
-  color: lightblue;
+  color: rgb(223, 199, 247);
   margin-right: 5%;
 }
 .icon_right2 {
   float: right;
-  color: lightblue;
+  color: rgb(223, 199, 247);
   margin-right: 5%;
 }
 .icon_left3 {
@@ -158,12 +158,12 @@ img {
   margin-left: 10%;
   width: 450px;
   border: 7px solid;
-  border-color: rgb(202, 230, 148);
+  border-color: lightblue;;
   box-shadow: 7px 7px 7px lightgray;
   display: inline-block;
 }
 .box_2{
-  border-color: lightblue;
+  border-color: rgb(223, 199, 247);
 }
 .box_3{
   border-color: rgb(169, 217, 247);

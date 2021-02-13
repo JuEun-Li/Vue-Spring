@@ -130,7 +130,7 @@ export default {
 
       msg9: '태양과의 거리: 20AU',
       msg10: '공전 주기: 약 84.0205년 (30,688.5일)',
-      msg11: '자전 주기: (평균)약 17시간 14분</li>',
+      msg11: '자전 주기: (평균)약 17시간 14분',
       msg12: '자전축이 97.77° 기울어져있다.',
 
       nextmsg9: '地球和太阳间的距离: 20AU',
@@ -211,6 +211,7 @@ table, td{
    border: 3px dashed lightgray;
    margin-left: auto; margin-right: auto;
    vertical-align: text-top;
+    font-family: 'Noto Sans SC', sans-serif;
  } /* table 스타일 */
 
  img, .pic_1 {
